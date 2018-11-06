@@ -15,8 +15,6 @@ Install requests_cache with pip:
 
     pip install requests_cache
 
-    python check_for_password_leaks.py
-
 
 Or pipenv, if that suits you sir! 
 
@@ -32,6 +30,6 @@ To manually enter a password to your shell and securely check it for leaks onlin
 
 To check a passwords.csv file:
 
-    python check_for_password_leaks.py type
+    python check_for_password_leaks.py
 
 
