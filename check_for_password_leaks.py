@@ -11,14 +11,17 @@ import requests_cache
 from hashlib import sha1
 from os import name as os_name
 from os import system as run_command
+import os.path
 
 
 def main():
     if 'type' in str(argv):
         check_manually_entered_passwords()
-    else:
+    elif os.path.exists('passwords.csv'):
         print('Checking passwords.csv')
         tell_me_which_passwords_are_bad(get_passwords_from_csv())
+    else:
+        print("please create a passwords.csv file, or run with -type param for manual entry")
 
 
 def clear():
