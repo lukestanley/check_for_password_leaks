@@ -10,26 +10,17 @@ Clone:
     cd check_for_password_leaks
 
 
-Install requests_cache with pip:
+Install dependencies with [Astral uv](https://docs.astral.sh/uv/):
     
-
-    pip install requests_cache
-
-
-Or pipenv, if that suits you sir! 
-
-    pipenv install
-
-    pipenv shell
+    uv sync
 
 
 To manually enter a password to your shell and securely check it for leaks online:
 
-    python check_for_password_leaks.py type
+    uv run python check_for_password_leaks.py type
 
 
 To check a passwords.csv file:
 
-    python check_for_password_leaks.py
-
+    uv run python check_for_password_leaks.py
 
