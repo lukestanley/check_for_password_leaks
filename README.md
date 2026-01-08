@@ -10,7 +10,7 @@ Clone:
     cd check_for_password_leaks
 
 
-Install dependencies with [Astral uv](https://docs.astral.sh/uv/):
+Requires Python 3.8+. Install dependencies with [Astral uv](https://docs.astral.sh/uv/), a fast Python package manager:
     
     uv sync
 
@@ -23,4 +23,3 @@ To manually enter a password to your shell and securely check it for leaks onlin
 To check a passwords.csv file:
 
     uv run python check_for_password_leaks.py
-

@@ -3,14 +3,11 @@ name = "check-for-password-leaks"
 version = "0.1.0"
 description = "Securely check if passwords have been leaked online."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 dependencies = [
     "requests==2.32.5",
     "requests-cache==1.2.1",
 ]
-
-[tool.uv]
-dev-dependencies = []
 
 [build-system]
 requires = ["hatchling"]
